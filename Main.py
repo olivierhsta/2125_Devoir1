@@ -9,3 +9,5 @@ f1 = tuple([1, 1, 1, 2])
 
 
 composition(f1, s1)
+
+print("ALLO")
