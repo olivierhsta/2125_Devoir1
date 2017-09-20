@@ -1,5 +1,9 @@
 def product(p, q):
-    return tuple(q[p[i] - 1] for i in range(len(p)))
+    r = []
+    for i in range(len(q)):
+        r.append(p[q[i]-1])
+    return r
+    #return tuple(q[p[i] - 1] for i in range(len(p)))
 
 
 def inverse(p):
@@ -25,7 +29,7 @@ def sift(tableau, p):
         return None
 
 
-def appartenance_intelligent(permutations, r):
+def composition(permutations, r):
     IDENTITY = tuple(range(1, len(r)+1))
     tableau = [[IDENTITY] * len(r) for _ in range(len(r))]
     
@@ -54,11 +58,12 @@ def appartenance_intelligent(permutations, r):
 # r = tuple([2, 1, 4, 5, 3]) # (12)(345)
 # print(appartenance_intelligent(set([a, b]), r))
 
-f11 = tuple([3, 1, 3, 4])
-f12 = tuple([3, 4, 2, 1])
-s1 = set([f11, f12])
-f1 = tuple([1, 1, 1, 2])
+f51 = tuple([3, 3, 5, 5, 7, 7, 1, 1, 11, 12, 12, 1])
+f52 = tuple([3, 3, 1, 1, 5, 5, 7, 7, 7, 4, 12, 11])
+f53 = tuple([1, 1, 3, 3, 5, 5, 9, 7, 9, 9, 10, 12])
+s5 = set([f51, f52, f53])
+f5 = tuple([7, 7, 3, 3, 1, 1, 5, 5, 12, 11, 10, 4])
 
 
-print(appartenance_intelligent(s1, f1))
+print(composition(s5, f5))
 

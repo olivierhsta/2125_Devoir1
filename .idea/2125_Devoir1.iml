@@ -2,11 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-<<<<<<< HEAD
     <orderEntry type="inheritedJdk" />
-=======
-    <orderEntry type="jdk" jdkName="Python 3.6.2 (C:\Users\olivi\OneDrive\Documents\python-3.6.2-embed-amd64\python.exe)" jdkType="Python SDK" />
->>>>>>> 5a9591b2dfcdf99c06c1fa89ff3c17d6545c303b
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
